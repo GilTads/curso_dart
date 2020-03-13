@@ -44,7 +44,7 @@ main() {
   print('Cliente: ${venda.cliente.nome}');
   print('Itens adquiridos: ${venda.itens.map((item) => item.produto.nome)}');
   print('Valor por produto: ${venda.itens.map((item) => item.produto.preco)}');
-  print('Preço por produto com desconto: ${venda.itens.map((item) => item.preco.truncate())}');
+  print('Preço por produto com desconto: ${venda.itens.map((item) => item.preco)}');
   print('Quantidade: ${venda.itens.map((item) => item.quantidade)}');
-  print('Valor total: R\$${venda.valorTotal.truncate()}');
+  print('Valor total: R\$${venda.valorTotal}');
 }
